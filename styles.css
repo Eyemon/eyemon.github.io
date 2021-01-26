@@ -33,17 +33,18 @@ body {
     color: #343a40;
     justify-content: flex-start;
     align-items: center;
-    width: 50%;
+    width: 45%;
     font-size: 40px;
 }
 
 .header-image{
-
+  display: flex;
+  width: 10%;
 }
 
 .button-container {
   display: flex;
-  width: 50%;
+  width: 45%;
 }
 
 .header-button {
