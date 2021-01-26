@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#ced4da, #f8f9fa);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "arvo", sans-serif;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  height: 150px;
+  background-color: linear-gradient(#ced4da, #f8f9fa);
+  width: 100%;
+  border-bottom: 2px solid #343a40;
+}
+
+.header-title {
+    display: flex;
+    color: #343a40;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    font-size: 40px;
+}
+
+.header-image{
+
+}
+
+.button-container {
+  display: flex;
+  width: 50%;
+}
+
+.header-button {
+  color: #343a40;
+  box-shadow: none;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  width: 33%;
+  height: 100%;
+}
+
+.secret-link{
+  text-decoration: none;
+  color: #343a40;
+}
+
+.header-button:hover {
+  color: #adb5bd;
+}
+
+.header-button:active {
+  color: #6c757d;
+}
+
+.active-pagebutton{
+  text-decoration: underline overline;
+}
+
+/* Main Text */
+.main-text {
+  height: 70%;
+  width: 100%;
+  justify-content: center;
+  background-color: #e9ecef;
+  margin: auto;
+  color: #343a40;
+}
+
+h1 {
+  padding-left: 5px;
+}
+
+h3 {
+  padding-left: 5px;
+}
+
+p {
+  text-align: justify;
+  text-indent: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.elevator-container{
+  display: flex;
+}
+
+.space-elevator-text{
+  width: 40%;
+}
+
+.space-elevator-image{
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  height: 550px;
+}
+.elevator-schematic{
+  width: 50%;
+  height: 100%;
+}
+
+.hobby-text-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 30%;
+  padding-right: 30%;
+  margin-bottom: 20px;
+}
+.hobby-text{
+  text-indent: 0px;
+}
+
+.hobby-list{
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.hobby-img-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.hobby-image{
+  display: flex;
+  height:250px;
+  width: 250px;
+  justify-content: center;
+}
+
+
+/* Footer */
+footer{
+  width: 100%;
+  justify-content: center;
+}
+.footer-container {
+  display: flex;
+  height: 30px;
+  width: 100%;
+  background-color: #dee2e6;
+}
+
+.privacy-meme{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+  height: 100%;
+  font-size: 10px;
+}
+
+.copyright-notice{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  height: 100%;
+  font-size: 10px;
+}
+
+/*
+@media only screen and (min-width: 961px) {
+  .page{
+  width: 960px;
+  margin: 0 auto;
+  }
+*/
+
+
+/* MEDIA S
+/* default styles here for older browsers and phones */
+@media only screen and (min-width: 960px) {
+  /* add styles for browsers larger than 960px; */
+  .page{
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* add styles for browsers larger than 1440px; */
+  .page{
+    width: 75%;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  /* add styles for mobile browsers smaller than 480px; (iPhone/Motorola) */
+    .button-container {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .header-button {
+    width: 100%;
+    }
+
+    .hobby-text-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .elevator-container{
+      display: flex;
+      height: 100%;
+    }
+
+    .space-elevator-text{
+      width: 100%;
+    }
+
+    .space-elevator-image{
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+    }
+    .elevator-schematic{
+      width: 100%;
+      height: 50%;
+    }
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  /* add styles for portrait layouts only */
+
+  }
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+      /* add styles for landscape layouts only */
+    }
+}
